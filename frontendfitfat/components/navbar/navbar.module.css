@@ -1,9 +1,0 @@
-.navbar {
-    background: var(--surface);
-    height: var(--navbar-height);
-  }
-  
-  .link {
-    @apply text-foreground hover:text-primary transition-colors;
-    font-family: var(--font-sans);
-  }

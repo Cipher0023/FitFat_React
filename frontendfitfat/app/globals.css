@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /*new colors*/
   --primary: #2563eb;
   --primary-light: #93c5fd;
   --primary-dark: #1e40af;
@@ -12,6 +13,7 @@
   --surface: #f8fafc;
   --accent: #f59e0b;
   --success: #10b981;
+  --navbar: #ffee00;
 }
 
 @media (prefers-color-scheme: dark) {

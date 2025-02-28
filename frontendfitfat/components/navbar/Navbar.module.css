@@ -1,0 +1,16 @@
+
+Copy
+.navbarContainer {
+  background: var(--navbar);
+  @apply w-full;
+  height: 4rem;
+}
+
+.navLink {
+  color: var(--foreground);
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: var(--accent);
+}
