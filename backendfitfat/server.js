@@ -3,6 +3,7 @@ import publicRoutes from './routes/public.js'
 import privateRoutes from './routes/private.js'
 import auth from './middlewares/auth.js'
 
+
 const app = express()
 app.use(express.json())
 

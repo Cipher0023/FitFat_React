@@ -1,22 +1,24 @@
+// Required imports
 import express from 'express'
-import bcrypt from 'bcrypt'
-import {PrismaClient} from '@prisma/client'
-import jwt from 'jsonwebtoken'
+import bcrypt from 'bcrypt'         // For password hashing
+import {PrismaClient} from '@prisma/client'  // Database ORM
+import jwt from 'jsonwebtoken'      // For authentication tokens
 
+// Initialize Prisma client and Express router
 const prisma = new PrismaClient()
 const router = express.Router()
 
 const JWT_SECRET = process.env.JWT_SECRET
 
-//Cadastro
+// Registration endpoint
 router.post('/cadastro', async(req, res) => {
-
     try{
         const user = req.body
-
+        // Generate salt and hash password
         const salt = await bcrypt.genSalt(10)
         const hashpassword = await bcrypt.hash(user.password, salt)
 
+        // Create user in database
         const userDB = await prisma.user.create({
             data: {
                 email: user.email,
@@ -31,39 +33,33 @@ router.post('/cadastro', async(req, res) => {
     }
 })
 
+// Login endpoint
 router.post('/login', async(req, res) => {
-
     try{
         const userInfo = req.body
 
-
-        //search for user in the database
+        // Find user by email
         const user = await prisma.user.findUnique({
             where:{email:userInfo.email},
         })
 
-        //verify if user exists
         if(!user){
             return res.status(404).json({message: 'Usuário não encontrado'})
         }
 
+        // Verify password
         const isMatch = await bcrypt.compare(userInfo.password, user.password)
-
-        //compare the password
         if(!isMatch){
             return res.status(400).json({message: 'senha incorreta'})
         }
 
-        //generate token
+        // Generate JWT token valid for 7 days
         const token = jwt.sign({id:user.id}, JWT_SECRET, {expiresIn: '7d'})
-
         res.status(200).json(token)
     }
     catch(err){
         res.status(500).json({message: 'Erro no servidor, tente novamente mais tarde'})
     }
-
-
 })
 
 export default router
