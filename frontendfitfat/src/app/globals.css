@@ -1,4 +1,9 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
+body{
+    background-color: rgb(0, 0, 0);
+}
 
 @theme{
     --deepblue-500: #023047;
@@ -14,7 +19,11 @@
     background-color: var(--amber-500);
 }
 .text-alabaster{
-    color: var(--alabaster-500)
+    color: var(--alabaster-500);
+}
+
+.text-amber{
+    color: var(--amber-500);
 }
 
 @utility container{
