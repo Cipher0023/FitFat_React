@@ -3,10 +3,12 @@ import express from 'express'
 import bcrypt from 'bcrypt'         // For password hashing
 import {PrismaClient} from '@prisma/client'  // Database ORM
 import jwt from 'jsonwebtoken'      // For authentication tokens
+import dotenv from 'dotenv'
 
 // Initialize Prisma client and Express router
 const prisma = new PrismaClient()
 const router = express.Router()
+dotenv.config()
 
 const JWT_SECRET = process.env.JWT_SECRET
 
