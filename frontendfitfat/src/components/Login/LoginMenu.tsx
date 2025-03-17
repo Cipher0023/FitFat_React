@@ -16,7 +16,10 @@ export default function LoginMenu() {
         setError(null);
 
         try {
-            const response = await fetch('http://localhost:3001/login', {
+
+            console.log('Dados enviados:', formData);
+
+            const response = await fetch('http://localhost:3001/public/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -26,14 +29,25 @@ export default function LoginMenu() {
 
             const data = await response.json();
 
+            console.log('Resposta completa:', {
+                status: response.status,
+                statusText: response.statusText,
+                headers: Object.fromEntries(response.headers.entries()),
+                body: data
+            });
+
             if (!response.ok) {
                 throw new Error(data.message || 'Erro ao fazer login');
             }
 
             // Login bem-sucedido - redirecionar ou armazenar token
             console.log('Login successful:', data);
+            localStorage.setItem('authToken', data);
+            console.log('token saved:', localStorage.getItem('authToken'));
+            window.location.href = '/dashboard';
             
         } catch (err) {
+            console.error('Erro durante o login:', err);
             setError(err instanceof Error ? err.message : 'Erro desconhecido');
         } finally {
             setLoading(false);
@@ -48,7 +62,7 @@ export default function LoginMenu() {
     };
 
     return (
-        <fieldset onSubmit={handleSubmit} className="fieldset w-xs bg-base-200 border border-base-300 p-4 rounded-box">
+        <form onSubmit={handleSubmit} className="fieldset w-xs bg-base-200 border border-base-300 p-4 rounded-box">
             <legend className="fieldset-legend justify-center">Login</legend>
 
             <label className="fieldset-label">Email</label>
@@ -82,6 +96,6 @@ export default function LoginMenu() {
             >
                 {loading ? 'Carregando...' : 'Login'}
             </button>
-        </fieldset>
+        </form>
     );
 }
