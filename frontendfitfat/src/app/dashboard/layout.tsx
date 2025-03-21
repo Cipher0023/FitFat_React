@@ -1,25 +1,25 @@
-import { ReactNode } from 'react';
+import type {Metadata} from "next"
+import './../../app/globals.css';
+import {SidebarProvider,SidebarTrigger} from "@/components/ui/sidebar"
+import {AppSidebar} from "@/components/app-sidebar"
 
 
-export const metadata = {
-  title: 'Manager space',
-  description: 'page dedicated to manage the website products and results',
+export const metadata: Metadata = {
+  title: 'Next.js + Tailwind v4',
+  description: 'Um projeto básico com Next.js e Tailwind CSS v4',
 };
 
-export default function Layout({ children }: { children: ReactNode }) {
-  return (
+export default function  Rootlayout({children,}: Readonly<{children: React.ReactNode;}>) {
+  return(
     <html lang="pt-BR">
-      <body className="min-h-screen flex flex-col bg-gray-50">
 
-
-
-
-
-
-        {/* Conteúdo Principal */}
-        <main className="flex-1">{children}</main>
-
+      <body>
+        <SidebarProvider>
+        <AppSidebar />
+        <SidebarTrigger />
+        </SidebarProvider>
+        {children}
       </body>
     </html>
-  );
+  )
 }
