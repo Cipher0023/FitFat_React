@@ -14,19 +14,6 @@ body{
 
 }
 
-.bg-deepblue{
-    background-color: var(--deepblue-500);
-}
-.bg-amber{
-    background-color: var(--amber-500);
-}
-.text-alabaster{
-    color: var(--alabaster-500);
-}
-
-.text-amber{
-    color: var(--amber-500);
-}
 
 @utility container{
     padding: 20px;
@@ -35,8 +22,8 @@ body{
 }
 
 @layer components{
-    .header-style{
-        @apply bg-yellow-700 ;
+    .navbar-style{
+        @apply m-0 p-0 flex-row text-5xl;
     }
 }
 

@@ -1,7 +1,5 @@
 import React from 'react';
 import {Poppins} from "next/font/google";
-import Navbar from '@/components/Nabar';
-import "../app/globals.css"
 
 
 
@@ -30,7 +28,6 @@ export default function RootLayout({
         <html lang="pt-BR">
 
             <body className={poppins.className}>
-              <Navbar/>
                 {children}
             </body>
         </html>
