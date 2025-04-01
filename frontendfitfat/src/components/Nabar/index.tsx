@@ -5,6 +5,16 @@ import Link from "next/link";
 import Image from "next/image";
 import NavItem, { NavItemInterface } from "../Nabar/Item/index";
 import { usePathname } from "next/navigation";
+import { Chakra_Petch } from 'next/font/google';
+
+
+
+const chakra = Chakra_Petch({
+    weight: ['300', '400', '500', '600', '700'],
+    style: ['normal', 'italic'],
+    subsets: ['latin'],
+    display: 'swap',
+  });
 
 
 export default function Navbar() {
@@ -32,7 +42,7 @@ export default function Navbar() {
 
     return (
         <header>
-            <nav className=" flex flex-row text-3xl justify-between items-center box-border">
+            <nav className="bg-gradient-to-b  from-white to-gray-600 flex flex-row text-3xl justify-between items-center box-border">
                 <Link href="/">
                     <Image src="cubicLogo.svg" width={100} height={100} alt="logo da empresa" />
                 </Link>
@@ -48,7 +58,7 @@ export default function Navbar() {
                     ))}
                 </ul>
 
-                <Link href="/login" className="p-2 border-3 border-transparent bg-black text-white rounded-full hover:border-blue-500">
+                <Link href="/login" className={`p-2 border-3 border-transparent ${chakra.className} bg-black text-white hover:border-blue-500 m-4`}>
                 Login
                 </Link>
 
