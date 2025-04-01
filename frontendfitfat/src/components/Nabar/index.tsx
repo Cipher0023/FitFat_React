@@ -1,7 +1,11 @@
+"use client"
 
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import NavItem, { NavItemInterface } from "../Nabar/Item/index";
+import { usePathname } from "next/navigation";
+
 
 export default function Navbar() {
 
@@ -11,18 +15,20 @@ export default function Navbar() {
             label: "Início"
         },
         {
-            url: "/",
+            url: "/produtos",
             label: "Produtos"
         },
         {
-            url: "/",
-            label: "About"
+            url: "/sobre",
+            label: "sobre"
         },
         {
-            url: "/",
+            url: "/contato",
             label: "Contato"
         }
     ];
+
+    const pathName = usePathname();
 
     return (
         <header>
@@ -37,13 +43,14 @@ export default function Navbar() {
                             key={index}
                             url={item.url}
                             label={item.label}
+                            isActive={pathName === item.url}
                         />
                     ))}
                 </ul>
 
-                <button className="p-5">
-                    Botão
-                </button>
+                <Link href="/login" className="p-2 border-3 border-transparent bg-black text-white rounded-full hover:border-blue-500">
+                Login
+                </Link>
 
             </nav>
         </header>
