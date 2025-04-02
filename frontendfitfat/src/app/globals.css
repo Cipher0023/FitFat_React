@@ -160,3 +160,51 @@ body{
     @apply bg-background text-foreground;
     }
 }
+
+/* parte relacionada ao cubo*/
+
+.scene {
+  perspective: 500px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.cube {
+  transform-style: preserve-3d;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  animation: girar 10s infinite linear;
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.678) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+
+  border: 3px solid rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.frente { transform: translateZ(100px); }
+.tras { transform: translateZ(-100px) rotateY(180deg); }
+.ladoesq { transform: translateZ(0px) translateX(100px) rotateY(90deg) rotateX(0deg); }
+.ladodir { transform: translateZ(0px) translateX(-100px) rotateY(-90deg) rotateX(0deg) rotateZ(0deg); }
+.cima { transform: translateZ(0px) translateY(-100px) rotateY(-90deg) rotateX(90deg) rotateZ(0deg); }
+.baixo { transform: translateZ(0px) translateY(100px) rotateY(-90deg) rotateX(90deg) rotateZ(0deg); }
+
+@keyframes girar {
+  from { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  to { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+}

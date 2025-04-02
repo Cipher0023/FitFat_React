@@ -1,7 +1,6 @@
 import React from 'react';
-import Navbar from '@/components/Nabar';
+import Navbar from '@/components/Navbar';
 import "../../app/globals.css"
-
 
 export default function RootLayout({
     children,
@@ -9,10 +8,11 @@ export default function RootLayout({
 }>){
     return(
         <html lang="pt-BR">
-
             <body>
-              <Navbar/>
-                {children}
+              <div className="sticky top-0 "> {/* Adicione esta div wrapper */}
+                <Navbar/>
+              </div>
+              {children}
             </body>
         </html>
     );

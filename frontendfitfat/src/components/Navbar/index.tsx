@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import NavItem, { NavItemInterface } from "../Nabar/Item/index";
+import NavItem, { NavItemInterface } from "./Item/index";
 import { usePathname } from "next/navigation";
 import { Chakra_Petch } from 'next/font/google';
 
@@ -42,9 +42,9 @@ export default function Navbar() {
 
     return (
         <header>
-            <nav className="bg-gradient-to-b  from-white to-gray-600 flex flex-row text-3xl justify-between items-center box-border">
+            <nav className="sm:h-[2em] bg-gradient-to-b  from-white to-gray-600 flex flex-row text-3xl justify-between items-center box-border">
                 <Link href="/">
-                    <Image src="cubicLogo.svg" width={100} height={100} alt="logo da empresa" />
+                    
                 </Link>
 
                 <ul className="flex flex-row">
