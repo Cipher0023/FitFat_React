@@ -1,7 +1,10 @@
+"use client"
+
 import React from 'react';
 import { Chakra_Petch } from 'next/font/google';
 import Cube3D from '@/components/cube/cube';
-import IsometricCube from '@/components/cube2/cube2';
+import {Canvas} from "@react-three/fiber";
+import Scene from "@/components/ThreeScene/Scene";
 
 const chakra = Chakra_Petch({
   weight: ['300', '400', '500', '600', '700'],
@@ -31,8 +34,18 @@ function Home() {
         </h2>
       </div>
 
-      <div className=" flex flex-row items-center justify-center bg-emerald-900 m-4 w-1/2 aspect-square">
-        <IsometricCube className="bg-white w-3/4 h-3/4"/>  
+      <div className="scroll-container flex flex-row items-center justify-center bg-emerald-900 m-4 w-3/5 aspect-square">
+        <p className="absolute text-white">
+          quadro de testes
+        </p>
+
+        <div className='canvas-container'>
+          <Canvas>
+            <Scene/>
+          </Canvas>
+
+        </div>
+
       </div>
 
       {/* Descrição */}
