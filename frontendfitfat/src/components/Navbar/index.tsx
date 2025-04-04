@@ -2,7 +2,6 @@
 
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import NavItem, { NavItemInterface } from "./Item/index";
 import { usePathname } from "next/navigation";
 import { Chakra_Petch } from 'next/font/google';
