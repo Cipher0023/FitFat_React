@@ -1,6 +1,6 @@
 import React, { Suspense, useRef } from 'react' // Importe useRef
 import { Canvas, useFrame } from '@react-three/fiber' // Importe useFrame
-import { Environment, OrbitControls } from '@react-three/drei'
+import { Environment} from '@react-three/drei'
 import * as THREE from 'three'; // Importe THREE para tipagem (opcional, mas bom)
 
 
@@ -8,9 +8,9 @@ type Props = object
 
 export function Cubic({}: Props) {
   return (
-    <div className="">
+    <div className="w-full h-full">
       <Canvas
-        className="w-full aspect-square"
+        className=""
         camera={{ position: [2.5, 2.5, 2.5], fov: 30 }}
       >
         <Suspense fallback={null}> {/* Adicione um fallback para Suspense */}
@@ -42,8 +42,7 @@ function Scene() {
 
   return (
     <group>
-      <OrbitControls />
-      <Environment preset="sunset" />
+      <Environment preset="sunset" /*background*/ />
       {/*<pointLight position={[1,1,1] intensity={5}} />*/}
 
       {/* 3. Atribua a ref ao mesh */}

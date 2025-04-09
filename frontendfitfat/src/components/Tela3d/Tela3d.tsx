@@ -12,7 +12,7 @@ export function TelaTheejs({}: Props) {
 
       <Canvas
       className="w-full aspect-square"
-      camera={{position: [1.5, 1, 1.4], fov:55}} 
+      camera={{position: [10, 1, 9], fov:40}} 
       >
         <Suspense>
 
