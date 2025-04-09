@@ -4,6 +4,8 @@ import React from 'react';
 import { Chakra_Petch } from 'next/font/google';
 import { Cubic } from '@/components/cubeLogo/Cubic';
 import { TelaTheejs } from '@/components/Tela3d/Tela3d';
+import BannerMediumLeft from '@/components/banners/BannerMediumLeft';
+import BannerMediumRight from '@/components/banners/BannerMediumRight';
 
 
 const chakra = Chakra_Petch({
@@ -36,7 +38,7 @@ function Home() {
         </div>
         
         <h2 className={`text-white m-4 mt-6 md:text-3xl ${chakra.className} italic`}>
-          Tecnologia que Impulsiona seu Negócio: Soluções completas para pequenas e médias empresas
+          Tecnologia que Impulsiona seu Negócio: Soluções de tecnologia completas para pequenas e médias empresas
         </h2>
 
         <p className={`text-xl m-4 text-white ${chakra.className}` }>
@@ -44,6 +46,8 @@ function Home() {
             organizar sua operação e crescer com segurança.
         </p>
       </div>
+
+      <div className='bg-white w-full'>division</div>
 
       <div className='flex flex-col m-4 text-white text-center'>
 
@@ -59,25 +63,106 @@ function Home() {
         </p>
       </div>
 
-      <section className=" text-center">
+      <section className=" text-center ">
         <p className="text-white md:text-3xl">
           Serviços
         </p>
 
-        <div className='text-white'>
-          <p>
-            Criação de sites:
-          </p>
-          <p>
-            Venda 24h por dia, mesmo quando sua loja está fechada.
-          </p>
-          <ul>
-            <li>Sites responsivos e otimizados para vendas online.</li>
-            <li>Integração com meios de pagamento e gestão de estoque.</li>
-            <li>Design profissional que reflete a identidade da sua marca.</li>
+        <BannerMediumLeft
+          title="Criação de sites:"
+          description='Venda 24h por dia, mesmo quando sua loja está fechada.'
+          listItems={[
+            "Sites responsivos e otimizados para vendas online.",
+            "Integração com meios de pagamento e gestão de estoque.",
+            "Design profissional que reflete a identidade da sua marca."
+          ]}
+        />
 
+        <BannerMediumRight
+          title="Gestão de Mídias Sociais e Marketing Digital:"
+          description='Aumente seu alcance e engajamento sem precisar postar uma única foto.'
+          listItems={[
+            "Criação de conteúdo estratégico para Instagram, Facebook e LinkedIn.",
+            "Campanhas segmentadas no Google Ads e Meta Ads.",
+            "Relatórios mensais de desempenho e ajustes em tempo real."
+          ]}
+        />
+
+        <BannerMediumLeft
+          title="Sistemas de Gestão Online (ERP e CRM)"
+          description='Controle vendas, estoque e clientes em um único lugar.'
+          listItems={[
+            "Plataformas intuitivas para automatizar processos.",
+            "Treinamento prático para sua equipe.",
+            "Suporte técnico dedicado para dúvidas e ajustes."
+          ]}
+        />
+
+        <BannerMediumRight
+          title="Assistência Técnica em Informática"
+          description='Problemas técnicos? Resolvemos rápido, sem complicação.'
+          listItems={[
+            "Reparo de computadores, impressoras e dispositivos.",
+            "Instalação de softwares e configuração de redes.",
+            "Planos de manutenção preventiva sob medida."
+          ]}
+        />
+
+        <div className='text-white text-start m-4'>
+
+          <p>
+            Assistência Técnica em Informática
+          </p>
+
+          <p>
+            Problemas técnicos? Resolvemos rápido, sem complicação.
+          </p>
+
+          <ul className="list-disc pl-4">
+            <li>Reparo de computadores, impressoras e dispositivos.</li>
+            <li>Instalação de softwares e configuração de redes.</li>
+            <li>Planos de manutenção preventiva sob medida.</li>
           </ul>
+
         </div>
+
+        <div className='text-white text-start m-4'>
+
+          <p>
+            Consultoria em Inteligência Artificial
+          </p>
+
+          <p>
+          Use a IA a favor do seu negócio, mesmo sem entender de tecnologia
+          </p>
+
+          <ul className="list-disc pl-4">
+            <li>Automação de atendimento via chatbots.</li>
+            <li>Análise de dados para tomada de decisões estratégicas.</li>
+            <li>Implementação de ferramentas de produtividade com IA generativa.</li>
+          </ul>
+
+        </div>
+
+        <div className='text-white text-start m-4'>
+
+          <p>
+            Entretenimento Digital
+          </p>
+
+          <p>
+            Surpreenda seus clientes com máquinas de arcade e jogos que atraem e fidelizam clientes à sua empresa!
+          </p>
+
+          <ul className="list-disc pl-4">
+            <li>Quiosques interativos para lojas e eventos.</li>
+            <li>Desenvolvimento de jogos personalizados para promoções.</li>
+            <li>Soluções de realidade aumentada para branding.</li>
+          </ul>
+
+        </div>
+
+        
 
         <p>
           
