@@ -7,7 +7,7 @@ Title: Low Poly Plane
 */
 
 import * as THREE from 'three'
-import React, { } from 'react'
+import React from 'react'
 import { useGLTF } from '@react-three/drei'
 import { GLTF } from 'three-stdlib'
 
@@ -31,8 +31,8 @@ type GLTFResult = GLTF & {
   }
 }
 
-export function Aviao3d(props: React.JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF('/aviao.gltf') as unknown as GLTFResult
+export function Airplane (props: React.JSX.IntrinsicElements['group']) {
+  const { nodes, materials } = useGLTF('/scene.gltf') as unknown as GLTFResult
   return (
     <group {...props} dispose={null}>
       <group name="Sketchfab_Scene">

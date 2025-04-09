@@ -1,12 +1,12 @@
 import React, { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { Environment, OrbitControls } from '@react-three/drei'
-import { Aviao3d } from '../models/low_poly_plane/Avião'
+import { Airplane } from '../models/Airplane'
 
 
 type Props = object
 
-export function Aviao({}: Props) {
+export function TelaTheejs({}: Props) {
   return (
     <div className="">
 
@@ -37,8 +37,8 @@ function Scene() {
 
       <mesh>
         <meshStandardMaterial/>
+        <Airplane/>
       </mesh>
-      <Aviao3d/>
   </group>
   )
 }

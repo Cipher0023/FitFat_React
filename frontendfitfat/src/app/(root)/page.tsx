@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { Chakra_Petch } from 'next/font/google';
-import Cube3D from '@/components/cube/cube';
-import { Aviao } from '@/components/componente3dv2/Tela3d';
+import { Cubic } from '@/components/cubeLogo/Cubic';
+import { TelaTheejs } from '@/components/Tela3d/Tela3d';
 
 
 const chakra = Chakra_Petch({
@@ -19,14 +19,20 @@ function Home() {
       {/* Container do título e cubo */}
       <div className="bg-fuchsia-500 flex flex-col items-center">
         <div className="flex bg-emerald-400 items-center">
-          <h1 className={`text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 ${chakra.className} font-bold sm:text-[4em] md:text-[em] lg:text-[13em] italic transition-all duration-300`}>
+
+          <h1 className={`
+            ${chakra.className} font-bold sm:text-[6em] md:text-[5em] lg:text-[13em] italic
+            text-transparent
+            bg-clip-text 
+            bg-gradient-to-r from-white to-gray-400    
+          `}>
             CUBIC developers
           </h1>
-          <div className="flex items-center justify-center bg-amber-400 sm:w-[5em] sm:h-[20em] md:h-[10em] md:w-[5em] lg:h-[25em] lg:w-[25em] text-[1em] md:text-[1.5em]">
-            <div className=" bg-red-500">
-              <Cube3D />
-            </div>
+
+          <div className="flex bg-red-500 w-1/2 aspect-square items-center justify-center text-[1em] md:text-[1.5em]">
+          <Cubic/>
           </div>
+
         </div>
         
         <h2 className={`text-white mt-6 text-xl md:text-2xl ${chakra.className} italic`}>
@@ -40,10 +46,8 @@ function Home() {
           quadro de testes
         </p>
 
-        <div className='w-full h-100 z-1'>
-
-          <Aviao />
-
+        <div className='w-full h-100 z-1'>  
+          <TelaTheejs/>
         </div>
 
       </div>
