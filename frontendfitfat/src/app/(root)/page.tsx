@@ -1,11 +1,12 @@
 "use client"
 
 import React from 'react';
+import Link from "next/link"
 import { Chakra_Petch } from 'next/font/google';
 import { Cubic } from '@/components/cubeLogo/Cubic';
 import { TelaTheejs } from '@/components/Tela3d/Tela3d';
-import BannerMediumLeft from '@/components/banners/BannerMediumLeft';
-import BannerMediumRight from '@/components/banners/BannerMediumRight';
+import BannerMediumLeft from '@/components/banners/medium/BannerMediumLeft';
+import BannerMediumRight from '@/components/banners/medium/BannerMediumRight';
 
 
 const chakra = Chakra_Petch({
@@ -63,6 +64,8 @@ function Home() {
         </p>
       </div>
 
+      <div className='bg-white w-full h-1 rounded-full'></div> {/* divisão provisória */}
+
       <section className="text-center w-full ">
         <p className="text-white md:text-3xl">
           Serviços
@@ -109,16 +112,6 @@ function Home() {
         />
 
         <BannerMediumLeft
-          title="Assistência Técnica em Informática"
-          description='Problemas técnicos? Resolvemos rápido, sem complicação.'
-          listItems={[
-            "Reparo de computadores, impressoras e dispositivos.",
-            "Instalação de softwares e configuração de redes.",
-            "Planos de manutenção preventiva sob medida."
-          ]}
-        />
-
-        <BannerMediumRight
           title="Consultoria em Inteligência Artificial"
           description='Use a IA a favor do seu negócio, mesmo sem entender de tecnologia'
           listItems={[
@@ -128,7 +121,7 @@ function Home() {
           ]}
         />
 
-        <BannerMediumLeft
+        <BannerMediumRight
           title="Entretenimento Digital"
           description='Jogos que atraem e fidelizam clientes à sua empresa!'
           listItems={[
@@ -141,7 +134,7 @@ function Home() {
 
       <div className='bg-white w-full h-1 rounded-full'></div> {/* divisão provisória */}
 
-      <div className='text-white'>
+      <div className='text-white m-4'>
         <p className=''>
           Diferenciais
         </p>
@@ -152,6 +145,19 @@ function Home() {
           <li>Suporte Contínuo: Não somos vendedores de projetos – estamos com você pós-venda.</li>
           <li>Tecnologia Acessível: Linguagem simples, sem termos técnicos complicados.</li>
         </ul>
+      </div>
+
+      <div className='bg-white w-full h-1 rounded-full'></div> {/* divisão provisória */}
+
+      <div className='text-white flex flex-col m-4'>
+
+        <p>Pronto para modernizar seu negócio?</p>
+        <p>Agende uma visita gratuita e receba um diagnóstico tecnológico para sua empresa.</p>
+
+        <Link href='/contato'className="bg-blue-700 text-white text-center hover:bg-blue-500 m-4 rounded-full" >
+          fale conosco
+        </Link>
+
       </div>
 
       <div className="scroll-container flex flex-row items-center justify-center bg-emerald-900 m-4 w-3/5 aspect-square">

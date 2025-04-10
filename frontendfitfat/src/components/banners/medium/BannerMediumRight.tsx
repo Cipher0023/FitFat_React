@@ -8,8 +8,8 @@ type Props = {
 
 export default function BannerMediumRight({title,description,listItems}: Props) {
   return (
-    <div className='text-white text-start m-4 flex flex-row justify-evenly'>
-      <div className="flex flex-col justify-center items-center m-4">
+    <div className='text-white text-start m-6 flex flex-row justify-evenly'>
+      <div className="flex flex-col w-3/4 justify-center items-center m-4">
         <p>
           {title}
         </p>
