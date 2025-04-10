@@ -8,7 +8,7 @@ type Props = {
 
 export default function BannerMediumRight({title,description,listItems}: Props) {
   return (
-    <div className='text-white text-start m-4 flex flex-row'>
+    <div className='text-white text-start m-4 flex flex-row justify-evenly'>
       <div className="flex flex-col justify-center items-center m-4">
         <p>
           {title}
@@ -22,7 +22,7 @@ export default function BannerMediumRight({title,description,listItems}: Props) 
           ))}
         </ul>
       </div>
-      <div className="bg-yellow-400 w-1/2 aspect-square text-black">
+      <div className="bg-yellow-400 w-1/4 aspect-square text-black">
         quadrado direito
       </div>
     </div>

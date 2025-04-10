@@ -8,8 +8,8 @@ type Props = {
 
 export default function BannerMediumLeft({title,description,listItems}: Props) {
   return (
-    <div className='text-white text-start m-4 flex flex-row'>
-      <div className="bg-red-500 w-1/2 aspect-square">
+    <div className='text-white text-start m-4 flex flex-row justify-evenly'>
+      <div className="bg-red-500 w-1/4 aspect-square">
         quadrado esquerdo
       </div>
       <div className="flex flex-col justify-center items-center m-4">

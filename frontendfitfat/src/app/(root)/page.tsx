@@ -47,9 +47,9 @@ function Home() {
         </p>
       </div>
 
-      <div className='bg-white w-full'>division</div>
+      <div className='bg-white w-full h-1 rounded-full'></div> {/* divisão provisória */}
 
-      <div className='flex flex-col m-4 text-white text-center'>
+      <div className=' flex flex-col m-4 text-white text-center'>
 
         <p className="text-2xl">
         Sobre nós  
@@ -63,7 +63,7 @@ function Home() {
         </p>
       </div>
 
-      <section className=" text-center ">
+      <section className="text-center w-full ">
         <p className="text-white md:text-3xl">
           Serviços
         </p>
@@ -108,75 +108,51 @@ function Home() {
           ]}
         />
 
-        <div className='text-white text-start m-4'>
+        <BannerMediumLeft
+          title="Assistência Técnica em Informática"
+          description='Problemas técnicos? Resolvemos rápido, sem complicação.'
+          listItems={[
+            "Reparo de computadores, impressoras e dispositivos.",
+            "Instalação de softwares e configuração de redes.",
+            "Planos de manutenção preventiva sob medida."
+          ]}
+        />
 
-          <p>
-            Assistência Técnica em Informática
-          </p>
+        <BannerMediumRight
+          title="Consultoria em Inteligência Artificial"
+          description='Use a IA a favor do seu negócio, mesmo sem entender de tecnologia'
+          listItems={[
+            "Automação de atendimento via chatbots.",
+            "Análise de dados para tomada de decisões estratégicas.",
+            "Implementação de ferramentas de produtividade com IA generativa."
+          ]}
+        />
 
-          <p>
-            Problemas técnicos? Resolvemos rápido, sem complicação.
-          </p>
-
-          <ul className="list-disc pl-4">
-            <li>Reparo de computadores, impressoras e dispositivos.</li>
-            <li>Instalação de softwares e configuração de redes.</li>
-            <li>Planos de manutenção preventiva sob medida.</li>
-          </ul>
-
-        </div>
-
-        <div className='text-white text-start m-4'>
-
-          <p>
-            Consultoria em Inteligência Artificial
-          </p>
-
-          <p>
-          Use a IA a favor do seu negócio, mesmo sem entender de tecnologia
-          </p>
-
-          <ul className="list-disc pl-4">
-            <li>Automação de atendimento via chatbots.</li>
-            <li>Análise de dados para tomada de decisões estratégicas.</li>
-            <li>Implementação de ferramentas de produtividade com IA generativa.</li>
-          </ul>
-
-        </div>
-
-        <div className='text-white text-start m-4'>
-
-          <p>
-            Entretenimento Digital
-          </p>
-
-          <p>
-            Surpreenda seus clientes com máquinas de arcade e jogos que atraem e fidelizam clientes à sua empresa!
-          </p>
-
-          <ul className="list-disc pl-4">
-            <li>Quiosques interativos para lojas e eventos.</li>
-            <li>Desenvolvimento de jogos personalizados para promoções.</li>
-            <li>Soluções de realidade aumentada para branding.</li>
-          </ul>
-
-        </div>
-
-        
-
-        <p>
-          
-        </p>
-        <p>
-          
-        </p>
-        <p>
-          
-        </p>
-        <p>
-          
-        </p>
+        <BannerMediumLeft
+          title="Entretenimento Digital"
+          description='Jogos que atraem e fidelizam clientes à sua empresa!'
+          listItems={[
+            "Quiosques interativos para lojas e eventos.",
+            "Desenvolvimento de jogos personalizados para promoções.",
+            "Soluções de realidade aumentada para branding."
+          ]}
+        />
       </section>
+
+      <div className='bg-white w-full h-1 rounded-full'></div> {/* divisão provisória */}
+
+      <div className='text-white'>
+        <p className=''>
+          Diferenciais
+        </p>
+
+        <ul>
+          <li>Atendimento Presencial: Vamos até você para entender suas dores e oferecer soluções práticas.</li>
+          <li>Pacotes Flexíveis: Serviços avulsos ou combos adaptados ao seu orçamento.</li>
+          <li>Suporte Contínuo: Não somos vendedores de projetos – estamos com você pós-venda.</li>
+          <li>Tecnologia Acessível: Linguagem simples, sem termos técnicos complicados.</li>
+        </ul>
+      </div>
 
       <div className="scroll-container flex flex-row items-center justify-center bg-emerald-900 m-4 w-3/5 aspect-square">
     

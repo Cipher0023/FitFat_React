@@ -13,7 +13,7 @@ const chakra = Chakra_Petch({
     style: ['normal', 'italic'],
     subsets: ['latin'],
     display: 'swap',
-  });
+    });
 
 
 export default function Navbar() {
@@ -29,11 +29,15 @@ export default function Navbar() {
         },
         {
             url: "/sobre",
-            label: "sobre"
+            label: "Sobre"
         },
         {
             url: "/contato",
             label: "Contato"
+        },
+        {
+            url:"/Blog",
+            label:"Blog"
         }
     ];
 
