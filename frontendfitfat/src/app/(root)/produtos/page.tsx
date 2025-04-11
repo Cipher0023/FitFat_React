@@ -13,6 +13,7 @@ export default function page() {
 
       <div>
         <p>Gestão de Mídias Sociais e Marketing Digital:</p>
+        <p className='text-white'>nós fazemos a gestão das redes sociais para você</p>
       </div>
 
       <div>
@@ -30,7 +31,6 @@ export default function page() {
       <div>
         <p>Entretenimento Digital</p>
       </div>
-
 
     </div>
   )
