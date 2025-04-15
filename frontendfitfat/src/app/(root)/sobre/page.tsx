@@ -1,10 +1,12 @@
-import ButtonSTD from '@/components/buttonSTD/ButtonSTD'
+import ButtonII from '@/components/buttonII/ButtonII'
 import React from 'react'
 
 const page = () => {
   return (
     <div className='flex flex-col justify-center items-center bg-gray-800 w-full aspect-square '>
-      <ButtonSTD></ButtonSTD>
+
+      <ButtonII></ButtonII>
+      
     </div>
   )
 }
