@@ -36,7 +36,7 @@ export default function Navbar() {
       label: "Contato"
     },
     {
-      url:"/Blog",
+      url:"/blog",
       label:"Blog"
     }
   ];
