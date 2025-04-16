@@ -3,6 +3,11 @@ import React from 'react'
 const page = () => {
   return (
     <div className='flex flex-col items-center bg-gray-800 w-full min-h-screen p-10'>
+      <div> 
+        <p className='text-6xl text-white m-4' >
+          Sobre nós
+        </p>
+      </div>
       <div className='flex flex-row justify-center flex-wrap'>
         <div className='p-4 flex flex-col items-center'>
           {/* as imagens de teste devem ficar na pasta public*/}
@@ -37,7 +42,7 @@ const page = () => {
         </div>
         <div className='p-4 flex flex-col items-center'>
           <img 
-          src="/placholder.jpg" 
+          src="/fotoluca.png" 
           alt="Foto de LucaLoucura" 
           className="w-40 h-40 object-cover rounded-full"
           />
@@ -47,8 +52,8 @@ const page = () => {
         </div>
         <div className='p-4 flex flex-col items-center'>
           <img 
-          src="/placeholderr.jpg" 
-          alt="Foto de Lucas Rezende" 
+          src="/placeholder.jpg" 
+          alt="Foto de Luis" 
           className="w-40 h-40 object-cover rounded-full"
           />
           <p className="font-comic text-white" style={{ fontFamily: "'Comic Sans MS', cursive" }}>  
@@ -71,6 +76,11 @@ const page = () => {
             Nosso diferencial é a abordagem do problema, onde, através de didatismo e longanimidade, será manuseado de forma na qual o cliente terá acesso ao tecnicismo envolvido e também independência e preparo para tornar seu decoro uma realidade.
           </p>
         </div>
+        <div> 
+        <p className='text-5xl text-white m-4' >
+          Pense fora da caixa, seja Cubic!
+        </p>
+      </div>
       </div>
     </div>
   )
