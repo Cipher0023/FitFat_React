@@ -2,7 +2,6 @@ import Link from "next/link"
 import { Chakra_Petch } from 'next/font/google';
 
 export interface NavItemInterface {
-  
   url: string,
   label: string
   isActive?: boolean

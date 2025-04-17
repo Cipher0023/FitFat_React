@@ -5,6 +5,7 @@ import Link from "next/link";
 import NavItem, { NavItemInterface } from "./Item/index";
 import { usePathname } from "next/navigation";
 import { Chakra_Petch } from 'next/font/google';
+import Logo from '@/components/logo/Logo'
 
 
 
@@ -19,10 +20,6 @@ const chakra = Chakra_Petch({
 export default function Navbar() {
 
   const items: NavItemInterface[] = [
-    {
-      url: "/",
-      label: "Início"
-    },
     {
       url: "/produtos",
       label: "Produtos"
@@ -45,8 +42,9 @@ export default function Navbar() {
 
   return (
     <header>
-      <nav className="sm:h-[2em] bg-gradient-to-b  from-white to-gray-600 flex flex-row text-3xl justify-between items-center box-border">
-        <Link href="/">            
+      <nav className="sm:h-[2em] bg-gradient-to-b  from-gray-700 to-gray-700 flex flex-row text-3xl justify-between items-center box-border">
+        <Link href="/">
+          <Logo/>            
         </Link>
         <ul className="flex flex-row">
           {items.map((item, index) => (
@@ -58,7 +56,7 @@ export default function Navbar() {
             />
           ))}
         </ul>
-        <Link href="/login" className={`p-2 border-3 border-transparent ${chakra.className} bg-black text-white hover:border-blue-500 m-4`}>
+        <Link href="/login" className={`p-2 border-3 border-transparent ${chakra.className} bg-gray-950 text-white hover:border-blue-500 m-4`}>
         Login
         </Link>
       </nav>
