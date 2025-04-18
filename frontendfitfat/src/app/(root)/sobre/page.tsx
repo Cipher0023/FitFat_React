@@ -37,7 +37,7 @@ const page = () => {
           className="w-40 h-40 object-cover rounded-full"
           />
           <p className="font-comic text-white" style={{ fontFamily: "'Comic Sans MS', cursive" }}>  
-            Bruno Seuba
+            Bruno Alexandrino
           </p>
         </div>
         <div className='p-4 flex flex-col items-center'>
