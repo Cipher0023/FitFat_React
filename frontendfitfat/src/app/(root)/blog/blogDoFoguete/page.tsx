@@ -29,7 +29,6 @@ export default function page({}: Props) {
         </div>
 
         <div className='m-4'>
-
           <ButtonIII/>
         </div>  
       </div>
