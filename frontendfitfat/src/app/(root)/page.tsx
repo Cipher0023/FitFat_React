@@ -79,6 +79,7 @@ function Home() {
             "Integração com meios de pagamento e gestão de estoque.",
             "Design profissional que reflete a identidade da sua marca."
           ]}
+          image="/images/sitecreation.png"
         />
 
         <BannerMediumRight
@@ -89,6 +90,7 @@ function Home() {
             "Campanhas segmentadas no Google Ads e Meta Ads.",
             "Relatórios mensais de desempenho e ajustes em tempo real."
           ]}
+          image="/images/redesociais.jpeg"
         />
 
         <BannerMediumLeft
@@ -99,6 +101,7 @@ function Home() {
             "Treinamento prático para sua equipe.",
             "Suporte técnico dedicado para dúvidas e ajustes."
           ]}
+          image="/images/ERP.jpeg"
         />
 
         <BannerMediumRight
@@ -109,6 +112,7 @@ function Home() {
             "Instalação de softwares e configuração de redes.",
             "Planos de manutenção preventiva sob medida."
           ]}
+          image="/images/TI.jpg"
         />
 
         <BannerMediumLeft
@@ -119,6 +123,7 @@ function Home() {
             "Análise de dados para tomada de decisões estratégicas.",
             "Implementação de ferramentas de produtividade com IA generativa."
           ]}
+          image="/images/IAa.jpg"
         />
 
         <BannerMediumRight
@@ -129,6 +134,7 @@ function Home() {
             "Desenvolvimento de jogos personalizados para promoções.",
             "Soluções de realidade aumentada para branding."
           ]}
+          image="/images/negaomechendonopc.jpg"
         />
       </section>
 
