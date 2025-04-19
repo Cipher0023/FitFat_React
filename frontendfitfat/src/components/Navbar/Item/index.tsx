@@ -1,3 +1,4 @@
+"use"
 import Link from "next/link"
 import { Chakra_Petch } from 'next/font/google';
 
@@ -17,7 +18,7 @@ const chakra = Chakra_Petch({
 
 export default function NavItem(props: NavItemInterface){
   return(
-    <li className={`m-5 text-4xl ${chakra.className} font-bold transition-colors duration-200 
+    <li className={`m-5 text-4xl ${chakra.className} font-medium transition-colors duration-200
       border-b-2 border-transparent hover:text-blue-700 hover:border-blue-700
       ${props.isActive ? 'text-blue-700 font-bold' : ''}`}
     >

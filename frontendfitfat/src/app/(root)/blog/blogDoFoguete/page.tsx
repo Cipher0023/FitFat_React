@@ -1,5 +1,4 @@
 import { ButtonII } from '@/components/buttonII/ButtonII'
-import ButtonIII from '@/components/buttonII/ButtonIII'
 import React from 'react'
 
 type Props = object
@@ -28,8 +27,11 @@ export default function page({}: Props) {
           <ButtonII>Botão 2.0</ButtonII>
         </div>
 
+        <p className='m-4 text-start'>
+          18/04/2025- O botão até que ficou legalzinho, mas sinceramente, muito aquém daquilo que eu tinha idealizado
+        </p>
+
         <div className='m-4'>
-          <ButtonIII/>
         </div>  
       </div>
 
