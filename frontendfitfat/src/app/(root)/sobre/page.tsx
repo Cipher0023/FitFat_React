@@ -52,7 +52,7 @@ const page = () => {
         </div>
         <div className='p-4 flex flex-col items-center'>
           <img 
-          src="/placeholder.jpg" 
+          src="/luis.jpg" 
           alt="Foto de Luis" 
           className="w-40 h-40 object-cover rounded-full"
           />
