@@ -1,3 +1,4 @@
+import Maps from '@/components/maps/Maps'
 import PromoImages from '@/components/promoImages/PromoImages'
 import React from 'react'
 
@@ -9,14 +10,14 @@ export default function page({}: Props) {
   return (
     <div className='flex flex-col w-full items-center aspect-square bg-gray-900 text-white'>
       <div className='flex flex-col items-left'>
-        <h1 className='text-7xl font-bold m-4'>Blog do Luan</h1>
+        <h1 className='text-7xl font-bold m-4'>Blog do Foguete</h1>
         <p className='text-2xl'>aqui falarei um pouco sobre o projeto e meus trabalhos, além de demonstá-los</p>
       </div>
 
       <div className='w-9/10 border-2 border-white text-center m-4 rounded-3xl p-4'>
-        <p className='text-3xl m-4'>Componente de imagem</p>
+        <p className='text-3xl m-4'>botão</p>
         <p className='m-4 text-start'>
-          meu primeiro componente de imagem
+          bnotão custom
         </p>
 
         <div className='m-4'>
@@ -28,15 +29,16 @@ export default function page({}: Props) {
         </p>
 
         <div className='m-4'>
-          <ButtonIII/>
         </div>  
       </div>
 
-      <div className='w-9/10 border-2 border-white text-center m-4 rounded-3xl p-4'>
+      <div className='w-9/10 border-2 border-white text-center m-4 rounded-3xl p-4 items items-center'>
         <p className='text-3xl m-4'>componente 2</p>
         <p className='m-4 text-start'>
           
         </p>
+
+        <Maps/>
       </div>
 
     </div>
