@@ -1,5 +1,5 @@
-import { ButtonII } from '@/components/buttonII/ButtonII'
-import ButtonIII from '@/components/buttonII/ButtonIII'
+import { ButtonII } from '@/components/buttonTypes/ButtonII'
+import ButtonIII from '@/components/buttonTypes/ButtonIII'
 import React from 'react'
 
 type Props = object

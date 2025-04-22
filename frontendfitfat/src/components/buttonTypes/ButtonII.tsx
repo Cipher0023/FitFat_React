@@ -45,7 +45,7 @@ export function ButtonII({ children, className, variant = "light", ...props }: B
           "relative inline-flex items-center justify-center  ",
           "px-6 h-12 font-normal text-base",
           "select-none rounded-0",
-          "rounded-2xl",
+          "rounded-2xl font-bold text-xl",
 
           // Bordas e Sombras
           "border-0 border-gray-400 ",

@@ -7,10 +7,9 @@ export interface NavItemInterface {
   url: string,
   label: string
   isActive?: boolean
-
 }
 
-export default function ButtonIII(props: NavItemInterface) {
+export default function ButtonIII() {
 
   const [isPressed, setIsPressed] = useState(false)
 

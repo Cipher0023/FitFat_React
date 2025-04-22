@@ -17,7 +17,7 @@ export default function Maps({}: Props) {
 
       const {Map} = await loader.importLibrary('maps');
 
-      const position = {lat: -25.344, lng: 131.095};
+      const position = {lat: -22.008, lng: -47.897};
 
       //map options
 
