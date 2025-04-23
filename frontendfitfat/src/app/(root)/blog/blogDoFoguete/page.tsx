@@ -1,5 +1,6 @@
 import { ButtonII } from '@/components/buttonTypes/ButtonII'
 import ButtonIII from '@/components/buttonTypes/ButtonIII'
+import ButtonIV from '@/components/buttonTypes/ButtonIV'
 import DieterRamsButtons from '@/components/buttonTypes/DieterRamsButtons'
 import Maps from '@/components/maps/Maps'
 import React from 'react'
@@ -10,13 +11,18 @@ export default function page({}: Props) {
 
 
   return (
-    <div className='flex flex-col w-full items-center aspect-square bg-gray-900 text-white'>
+    <div className="flex flex-col w-full items-center aspect-square text-white 
+bg-gradient-to-br from-gray-950 via-indigo-950 to-sky-500 
+relative shadow-inner shadow-blue-800/30 rounded-2xl">
+
+
+
       <div className='flex flex-col items-left m-4'>
         <h1 className='text-7xl font-bold'>Blog do Foguete 🚀</h1>
         <p className='text-2xl'>aqui falarei um pouco sobre o projeto e meus trabalhos, além de demonstá-los</p>
       </div>
 
-      <div className='w-9/10 border-2 border-white rounded-3xl p-2'>
+      <div className=' bg-gray-900 w-9/10 border-2 border-white rounded-3xl p-2'>
 
         <div className='text-center'>{/*post*/}
           <p className='text-3xl  font-bold m-2'>Botão padrão</p>
@@ -65,7 +71,7 @@ export default function page({}: Props) {
 
 
         <div className='p-0 items-center text-center m-2'>
-          <p className='font-bold m-2'>Botão v4: 22/04/2025</p>
+          <p className='font-bold m-2'>Botão IA: 22/04/2025</p>
           <p className='m-2'>
             O botão v3 se mostrou insuficiente na estética em geral, tentei de diversas formas melhora-lo, mas 
             percebi que a IA V0 faria um trabalho, com a parte estética e com outros detalhes, muito melhor do que 
@@ -84,20 +90,20 @@ export default function page({}: Props) {
         <div className='w-full h-0.5 bg-white'> {/*separador, RESOLVER DEPOIS */} </div>
 
         <div className='p-0 items-center text-center m-2'>
-          <p className='font-bold m-2'>Botão v5: 22/04/2025</p>
+          <p className='font-bold m-2'>Botão v4: 22/04/2025</p>
           <p className='m-2'>
-            Em andamento
+            Finalmente algo que me deixa satisfeito com a estética e animação!
           </p>
           {/*post do projeto */}
           <div className='flex w-full justify-center m-4'>
-            <p className='w-50 aspect-square bg-red-600 font-bold'> em andamento</p>
+            <ButtonIV></ButtonIV>
           </div>
         </div>
 
         
       </div>
 
-      <div className='w-9/10 border-2 border-white text-center m-4 rounded-3xl p-4 items items-center'>
+      <div className='w-9/10 bg-gray-900 border-2 border-white text-center m-4 rounded-3xl p-4 items items-center'>
 
         <p className='text-3xl  font-bold m-2'>Integração API Google maps</p>
         <p className='font-bold'>Início do projeto: 19/04/2025</p>
@@ -123,6 +129,19 @@ export default function page({}: Props) {
             <Maps/>
           </div>
         </div>
+
+        <div className='w-full h-0.5 bg-white'> {/*separador, RESOLVER DEPOIS */} </div>
+
+        <div className='p-0 items-center text-center m-2'>
+          <p className='font-bold m-2'>Nova Ui</p>
+          <p className='m-2'>
+            o meu blog agora testa a nova versão do design do site
+          </p>
+          {/*post do projeto */}
+          <div className='flex w-full justify-center m-4'>
+          </div>
+        </div>
+
       </div>
 
     </div>

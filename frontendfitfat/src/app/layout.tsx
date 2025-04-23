@@ -8,7 +8,7 @@ export default function RootLayout({
 }>){
   return(
     <html lang="pt-BR">
-      <body>
+      <body className='bg-gradient-to-br from-gray-950 via-indigo-950 to-sky-500'>
         {children}
         <footer>
           <p>
