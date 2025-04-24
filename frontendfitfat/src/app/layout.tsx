@@ -1,5 +1,6 @@
 import React from 'react';
 import "../app/globals.css"
+import Footer from '@/components/footer/Footer';
 
 
 export default function RootLayout({
@@ -8,12 +9,10 @@ export default function RootLayout({
 }>){
   return(
     <html lang="pt-BR">
-      <body className='bg-gradient-to-br from-gray-950 via-indigo-950 to-sky-500'>
+      <body>
         {children}
         <footer>
-          <p>
-            teste de footer
-          </p>
+          <Footer />
         </footer>
       </body>
     </html>

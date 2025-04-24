@@ -4,7 +4,6 @@ import React from 'react';
 import Link from "next/link"
 import { Chakra_Petch } from 'next/font/google';
 import { Cubic } from '@/components/cubeLogo/Cubic';
-import { TelaTheejs } from '@/components/Tela3d/Tela3d';
 import BannerMediumLeft from '@/components/banners/medium/BannerMediumLeft';
 import BannerMediumRight from '@/components/banners/medium/BannerMediumRight';
 
@@ -18,7 +17,7 @@ const chakra = Chakra_Petch({
 
 function Home() {
   return (
-    <main className="flex flex-col min-h-screen justify-center items-center bg-gray-900 p-6">
+    <main className="flex flex-col min-h-screen justify-center items-center bg-gradient-to-br from-gray-950 via-indigo-950 to-sky-500 p-6">
       {/* Container do título e cubo */}
       <div className="bg-fuchsia-500-0 m-4 flex flex-col items-center">
         <div className="flex bg-emerald-400-0 items-center">
@@ -165,16 +164,6 @@ function Home() {
         </Link>
 
       </div>
-
-      <div className="scroll-container flex flex-row items-center justify-center bg-emerald-900 m-4 w-3/5 aspect-square">
-    
-
-        <div className='w-full z-1'>  
-          <TelaTheejs/>
-        </div>
-
-      </div>
-
     </main>
   );
 }

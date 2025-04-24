@@ -4,7 +4,7 @@
 @plugin "daisyui";
 
 body{
-    background-color: rgba(151, 181, 221, 0.57);
+    background-color: rgba(0, 0, 0, 0.57);
 }
 
 @theme{

@@ -1,9 +1,12 @@
+"use client"
+
 import { ButtonII } from '@/components/buttonTypes/ButtonII'
 import ButtonIII from '@/components/buttonTypes/ButtonIII'
 import ButtonIV from '@/components/buttonTypes/ButtonIV'
 import DieterRamsButtons from '@/components/buttonTypes/DieterRamsButtons'
 import Maps from '@/components/maps/Maps'
 import React from 'react'
+import { TelaTheejs } from '@/components/Tela3d/Tela3d';
 
 type Props = object
 
@@ -130,17 +133,38 @@ relative shadow-inner shadow-blue-800/30 rounded-2xl">
           </div>
         </div>
 
+
+      </div>
+
+
+      <div className='flex flex-col w-9/10 bg-gray-900 border-2 border-white text-center m-4 rounded-3xl p-4 items items-center'>
+
+        <p className='text-3xl  font-bold m-2'>Elementos 3d</p>
+        <p className='font-bold'>Início do projeto: 19/04/2025</p>
+        <p className='m-2'>
+          Uma das ideias de diferenciação de mercado era a criação de sites 3d, após muitas buscas, encontrei o 
+          ThreeJs, uma biblioteca de javascript que permite a criação de espaços 3d, onde o programador pode criar 
+          o que desejar no espaço delimitado. Sofri um pouco para fazer rodar como deveria, mas depois de algumas tentativas 
+          aqui está o resultado. <br></br><br></br> Ainda não tive uma boa ideia de como usar isso no site em geral, 
+          mas é bom ter preparado
+        </p>
+
+        <div className='w-full h-0.5 bg-white'> {/*separador, RESOLVER DEPOIS */} </div>
+
         <div className='w-full h-0.5 bg-white'> {/*separador, RESOLVER DEPOIS */} </div>
 
         <div className='p-0 items-center text-center m-2'>
-          <p className='font-bold m-2'>Nova Ui</p>
+          <p className='font-bold m-2'>Elemento ThreeJS: 09/04/2025</p>
           <p className='m-2'>
-            o meu blog agora testa a nova versão do design do site
+            Aqui você pode ver um modelo 3d manipulável pelo usuário
           </p>
+          
           {/*post do projeto */}
-          <div className='flex w-full justify-center m-4'>
+          <div className='flex w-200 aspect-square justify-center m-4'>
+            <TelaTheejs/>
           </div>
         </div>
+
 
       </div>
 
