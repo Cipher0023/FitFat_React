@@ -2,6 +2,11 @@ import React from 'react'
 
 type Props = object
 
+export interface NavItemInterface {
+  label: string
+}
+
+
 export default function ButtonIV({}: Props) {
   return (
     <div>

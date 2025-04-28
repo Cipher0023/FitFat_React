@@ -22,7 +22,6 @@ cloudinary.config({
 router.post('/upload', async (req, res) => {
     // DESTRUCTURE IMAGE FROM REQ.BODY
     const { image } = req.body;
-  
     try {
         // DEFINE UPLOAD OPTIONS
         const options = {

@@ -19,13 +19,12 @@ bg-gradient-to-br from-gray-950 via-indigo-950 to-sky-500
 relative shadow-inner shadow-blue-800/30 rounded-2xl">
 
 
-
-      <div className='flex flex-col items-left m-4'>
+      <div className='flex flex-col items-left m-4 '>
         <h1 className='text-7xl font-bold'>Blog do Foguete 🚀</h1>
         <p className='text-2xl'>aqui falarei um pouco sobre o projeto e meus trabalhos, além de demonstá-los</p>
       </div>
 
-      <div className=' bg-gray-900 w-9/10 border-2 border-white rounded-3xl p-2'>
+      <div className='w-9/10 bg-gray-900 border-2 border-white text-center m-4 rounded-3xl p-4 items items-center'>
 
         <div className='text-center'>{/*post*/}
           <p className='text-3xl  font-bold m-2'>Botão padrão</p>
@@ -167,6 +166,108 @@ relative shadow-inner shadow-blue-800/30 rounded-2xl">
 
 
       </div>
+
+      <div className=' bg-radial-[at_25%_25%] from-trasnparent from-20% to-black/90 backdrop-blur-md w-9/10 border-1 border-white rounded-3xl p-2 m-2'>
+
+        <p className='text-3xl  font-bold m-2'>novo estilo para o site!</p>
+        <p className='font-bold'>Início do projeto: 25/04/2025</p>
+        <p className='m-2'>
+          No começo, não havia nada e do nada veio o tudo e blablabla... sabe, no início desse projeto 
+          eu tinha como objetivo montar um site de uma marmitaria, acabei indo para uma tangente imensa e 
+          criei a minha empresa, a CUBIC. Durante todo o aprendizado de react javascript e outros, quis fazer 
+          algo que fosse estéticamente agradável,com um visual futurista e que fosse simples e funcional. O estilo 
+          que adotei de início, apesar de simples, tinha potêncial para crescer e escalonar, era feio, mas funcional.
+          <br></br><br></br> Agora, com a ajuda da IA V0, além de muitos tutoriais no youtube, consegui criar um estilo 
+          que me agrada e que é muito prático.<br></br><br></br>A pardir daqui, você verá em primeira mão a mudanças que 
+          farão o novo estilo!
+        </p>
+
+        <div className='w-full h-0.5 bg-white'> {/*separador, RESOLVER DEPOIS */} </div>
+
+        <div className='p-0 items-center text-center m-2'>
+          <p className='font-bold m-2'>Glassmorphism v1: 25/04/2025</p>
+          <p className='m-2'>
+            Aqui temos algumas telas usando o efeito de glasmorphia que criei, não estou usando nada mais do que puro 
+            tailwindcss, o resultado é satisfatório, mas vejo que há muita margem para melhorias.
+          </p>
+          
+          {/*post do projeto */}
+          <div className='flex justify-center m-4'>
+
+            <div className=' bg-radial-[at_50%_50%] from-black/50 from-9% to-white/30 backdrop-blur 
+            w-2/10 aspect-square border-1 border-black rounded-3xl p-2 m-2'
+            >
+            </div>
+
+            <div className=' bg-radial-[at_25%_25%] from-transparent from-50% to-white/70 backdrop-blur 
+            w-2/10 aspect-square border-1 border-white rounded-3xl p-2 m-2'
+            >
+            </div>
+
+            <div className='relative bg-radial-[at_50%_50%] from-transparent from-5% to-white/14 backdrop-blur 
+            w-2/10 aspect-square border-0 border-white rounded-3xl p-2 m-2'>
+              <div className='absolute inset-0 bg-radial-[at_50%_50%] from-white/14 from-5% to-transparent backdrop-blur 
+              rounded-3xl'
+              >
+                um em cima do outro
+              </div>
+            </div>
+
+
+    
+          </div>
+        </div>
+
+
+      </div>
+
+      <div className=' bg-radial-[at_25%_25%] from-trasnparent from-20% to-black/90 backdrop-blur-md w-9/10 border-1 border-white rounded-3xl p-2 m-2'>
+
+        <p className='text-3xl  font-bold m-2'>Projeto blockchain e pagamentos</p>
+        <p className='font-bold'>Início do projeto: 28/04/2025</p>
+        <p className='m-2'>
+          Eu estou cogitando aprender isso, tem potêncial
+        </p>
+
+        <div className='w-full h-0.5 bg-white'> {/*separador, RESOLVER DEPOIS */} </div>
+
+        <div className='p-0 items-center text-center m-2'>
+          <p className='font-bold m-2'>Glassmorphism v1: 25/04/2025</p>
+          <p className='m-2'>
+            Aqui temos algumas telas usando o efeito de glasmorphia que criei, não estou usando nada mais do que puro 
+            tailwindcss, o resultado é satisfatório, mas vejo que há muita margem para melhorias.
+          </p>
+          
+          {/*post do projeto */}
+          <div className='flex justify-center m-4'>
+
+            <div className=' bg-radial-[at_50%_50%] from-black/50 from-9% to-white/30 backdrop-blur 
+            w-2/10 aspect-square border-1 border-black rounded-3xl p-2 m-2'
+            >
+            </div>
+
+            <div className=' bg-radial-[at_25%_25%] from-transparent from-50% to-white/70 backdrop-blur 
+            w-2/10 aspect-square border-1 border-white rounded-3xl p-2 m-2'
+            >
+            </div>
+
+            <div className='relative bg-radial-[at_50%_50%] from-transparent from-5% to-white/14 backdrop-blur 
+            w-2/10 aspect-square border-0 border-white rounded-3xl p-2 m-2'>
+              <div className='absolute inset-0 bg-radial-[at_50%_50%] from-white/14 from-5% to-transparent backdrop-blur 
+              rounded-3xl'
+              >
+                um em cima do outro
+              </div>
+            </div>
+
+
+    
+          </div>
+        </div>
+
+
+      </div>
+
 
     </div>
   )

@@ -1,4 +1,4 @@
-import BannerLarge from '@/components/banners/large/BannerLarge'
+import BannerHorizontalThick from '@/components/banners/horizontal/thick/BannerHorizontalThick'
 import React from 'react'
 
 export default function page() {
@@ -6,9 +6,18 @@ export default function page() {
     <div>
       <p>Produtos</p>
 
-      <div className='m-2 flex flex-col items-center justify-evenly'>
-        <p>Criação de sites</p>
-        <BannerLarge/>
+      <div className='m-2 flex flex-col items-center justify-evenly text-white'>
+        <p className='text-2xl font-bold'>Criação de sites</p>
+        <BannerHorizontalThick
+          title="Inpire!"
+          description='E-commerce'
+          listItems={[
+            "novidade 1",
+            "novidade 2",
+            "novidade 3",
+          ]}
+          image="/fotoDan.jpg"
+        />
       </div>
 
       <div>
