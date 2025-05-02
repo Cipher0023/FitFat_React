@@ -6,17 +6,16 @@ export default function page() {
     <div>
       <p>Produtos</p>
 
-      <div className='m-2 flex flex-col items-center justify-evenly text-white'>
-        <p className='text-2xl font-bold'>Criação de sites</p>
+      <div className='flex flex-col items-center justify-evenly text-white'>
         <BannerHorizontalThick
-          title="Inpire!"
+          title="Inpire! e-commerce de perfumarias"
           description='E-commerce'
           listItems={[
             "novidade 1",
             "novidade 2",
             "novidade 3",
           ]}
-          image="/fotoDan.jpg"
+          image="/images/images.jpeg"
         />
       </div>
 

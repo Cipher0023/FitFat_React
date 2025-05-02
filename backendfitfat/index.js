@@ -1,3 +1,5 @@
+//Este arquivo faz apenas o upload de imagens para o cloudinary
+
 import express from 'express';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv'

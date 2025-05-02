@@ -19,9 +19,10 @@ bg-gradient-to-br from-gray-950 via-indigo-950 to-sky-500
 relative shadow-inner shadow-blue-800/30 rounded-2xl">
 
 
-      <div className='flex flex-col items-left m-4 '>
+      <div className='flex flex-col items-left m-4 items-center '>
         <h1 className='text-7xl font-bold'>Blog do Foguete 🚀</h1>
-        <p className='text-2xl'>aqui falarei um pouco sobre o projeto e meus trabalhos, além de demonstá-los</p>
+        <p className='text-3xl text-center'>aqui falarei um pouco sobre o projeto e meus trabalhos, além de demonstá-los</p>
+        <p className='text-xl  text-center p-10'>Se um dia tudo for esquecido, que me reste ao menos isto: alguém falou com o silêncio e o silêncio respondeu</p>
       </div>
 
       <div className='w-9/10 bg-gray-900 border-2 border-white text-center m-4 rounded-3xl p-4 items items-center'>

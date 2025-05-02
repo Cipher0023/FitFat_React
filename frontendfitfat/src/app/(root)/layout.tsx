@@ -9,7 +9,7 @@ export default function RootLayout({
     return(
         <html lang="pt-BR">
             <body>
-              <div className="sticky top-0 z-10 "> {/* Adicione esta div wrapper */}
+              <div className="sticky top-0 z-100 "> {/* Adicione esta div wrapper */}
                 <Navbar/>
               </div>
               {children}
