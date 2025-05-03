@@ -17,19 +17,20 @@ model User {
   email   String   @unique
   name    String
   password String
-  posts   Post[]
-  comments Comment[]
-
+  postsMade   Post[]
+  commentsMade Comment[]
+  hightlightsAdded hightlight[]
+  productsAdded product[]
 }
 
 model Post {
   id       String    @id @default(auto()) @map("_id") @db.ObjectId
-  slug     String    @unique
   title    String
   body     String
   author   User      @relation(fields: [authorId], references: [id])
   authorId String    @db.ObjectId
   comments Comment[]
+  photo    String
 }
 
 model Comment {
@@ -40,3 +41,24 @@ model Comment {
   post     Post      @relation(fields: [postId], references: [id])
   postId   String    @db.ObjectId
 }
+
+model hightlight {
+  id       String    @id @default(auto()) @map("_id") @db.ObjectId
+  title    String
+  body     String
+  authorId String    @db.ObjectId
+  author   User      @relation(fields: [authorId], references: [id])
+  photo    String
+}
+
+model product {
+  id       String    @id @default(auto()) @map("_id") @db.ObjectId
+  title    String
+  body     String
+  authorId String    @db.ObjectId
+  author   User      @relation(fields: [authorId], references: [id])
+  photo    String
+  price    Float
+  category String
+}
+

@@ -42,7 +42,7 @@ export default function Navbar() {
 
   return (
     <header>
-      <nav className="sm:h-[2em] bg-gradient-to-b  from-gray-700 to-gray-700 flex flex-row text-3xl justify-between items-center box-border">
+      <nav className="sm:h-[2em] bg-gradient-to-b  from-gray-700 to-gray-700 flex flex-row text-2xl justify-between items-center box-border">
         <Link href="/">
           <Logo/>            
         </Link>
@@ -56,7 +56,7 @@ export default function Navbar() {
             />
           ))}
         </ul>
-        <Link href="/login" className={`p-2 border-3 border-transparent ${chakra.className} bg-gray-950 text-white hover:border-blue-500 m-4`}>
+        <Link href="/login" className={`p-1 border-3 border-transparent ${chakra.className} bg-gray-950 text-white hover:border-blue-500 m-2`}>
         Login
         </Link>
       </nav>
