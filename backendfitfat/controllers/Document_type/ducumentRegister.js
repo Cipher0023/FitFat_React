@@ -1,11 +1,10 @@
-import bcrypt from 'bcrypt'         // For password hashing
 import {PrismaClient} from '@prisma/client'  // Database ORM
 import dotenv from 'dotenv'
 
 dotenv.config();
 const prisma = new PrismaClient();
 
-export const registerUser = async (req, res) => {
+export const registerDocumentType = async (req, res) => {
 
     try{
         const {email, name, telephone, document_type, document_number, password, role, salary} = req.body;

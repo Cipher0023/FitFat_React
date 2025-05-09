@@ -9,7 +9,7 @@ import corsOptions from './configs/corsOptions.js';
 
 const app = express()
 app.use(express.json())
-app.use(cors(corsOptions));
+app.use(cors());
 
 //rotas publicas
 app.use('/public',publicRoutes)
