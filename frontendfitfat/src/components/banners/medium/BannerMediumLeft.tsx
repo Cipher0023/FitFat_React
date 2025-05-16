@@ -11,14 +11,6 @@ export default function BannerMediumLeft({title,description,listItems,image}: Pr
   return (
     <div className='text-white text-start m-6 flex flex-row justify-evenly gap-4'>
       {/* Image container with fixed aspect ratio */}
-      <div className="w-1/2 flex-shrink-0">
-        <img 
-          src={image} 
-          alt="banner" 
-          className="w-full h-64 object-cover rounded-lg"
-          loading="lazy"
-        />
-      </div>
 
       <div className="flex flex-col w-3/4 justify-center items-start m-4">
         <h2 className="text-2xl font-bold mb-4">{title}</h2>

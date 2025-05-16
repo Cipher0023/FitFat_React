@@ -7,6 +7,8 @@ import DieterRamsButtons from '@/components/buttonTypes/DieterRamsButtons'
 import Maps from '@/components/maps/Maps'
 import React from 'react'
 import { TelaTheejs } from '@/components/Tela3d/Tela3d';
+import BlogPost from '@/components/blogPost/BlogPost'
+import CompTextura from '@/components/componenteTextura/CompTextura'
 
 type Props = object
 
@@ -230,44 +232,60 @@ relative shadow-inner shadow-blue-800/30 rounded-2xl">
           Eu estou cogitando aprender isso, tem potêncial
         </p>
 
-        <div className='w-full h-0.5 bg-white'> {/*separador, RESOLVER DEPOIS */} </div>
-
-        <div className='p-0 items-center text-center m-2'>
-          <p className='font-bold m-2'>Glassmorphism v1: 25/04/2025</p>
-          <p className='m-2'>
-            Aqui temos algumas telas usando o efeito de glasmorphia que criei, não estou usando nada mais do que puro 
-            tailwindcss, o resultado é satisfatório, mas vejo que há muita margem para melhorias.
-          </p>
-          
-          {/*post do projeto */}
-          <div className='flex justify-center m-4'>
-
-            <div className=' bg-radial-[at_50%_50%] from-black/50 from-9% to-white/30 backdrop-blur 
-            w-2/10 aspect-square border-1 border-black rounded-3xl p-2 m-2'
-            >
-            </div>
-
-            <div className=' bg-radial-[at_25%_25%] from-transparent from-50% to-white/70 backdrop-blur 
-            w-2/10 aspect-square border-1 border-white rounded-3xl p-2 m-2'
-            >
-            </div>
-
-            <div className='relative bg-radial-[at_50%_50%] from-transparent from-5% to-white/14 backdrop-blur 
-            w-2/10 aspect-square border-0 border-white rounded-3xl p-2 m-2'>
-              <div className='absolute inset-0 bg-radial-[at_50%_50%] from-white/14 from-5% to-transparent backdrop-blur 
-              rounded-3xl'
-              >
-                um em cima do outro
-              </div>
-            </div>
-
-
-    
-          </div>
-        </div>
-
-
       </div>
+
+      <BlogPost
+        title="Backend estruturado e banco de dados modelado"
+        startDate="02/05/2025"
+        description="Conforme fui desenvolvendo o frontend fui percebendo que o backend não comportava mais o que eu estava fazendo, então decidi reestruturar muita coisa, mas valeu a pena"
+        version={[
+          {
+            title: "v1.0",
+            endDate: "09/05/2025",
+            description: "Após uma semana de trabalho fiz banco de dados estruturado e uma api de cadastro de desenvolvedor funcionando",
+            image: [
+              { src: "/images/posts/backendAtualizado/apiDev.png", alt: "Api de cadastro de desenvolvedor funcionando" },
+              { src: "/images/posts/backendAtualizado/estruturaBancoDeDados.png", alt: "Estrutura do banco de dados" },
+            ]
+          }
+        ]}
+      />
+
+      <BlogPost
+        title="Componente Post"
+        startDate="16/05/2025"
+        description="Demorei um pouco para voltar ao frontend, mas voltei fazendo um componente que preotelei por um bom tempo"
+        version={[
+          {
+            title: "v1.0",
+            endDate: "16/05/2025",
+            description: "Versão simples que aceita várias versões e varias imagens por versão em apenas um post",
+            image: [
+              { src: "/images/posts/componentePost/componentePost1.png", alt: "Arquivo" },
+              { src: "/images/posts/componentePost/componentePost2.png", alt: "Código do componente" },
+              { src: "/images/posts/componentePost/componentePost3.png", alt: "componente sendo usado" },
+            ]
+          }
+        ]}
+      />
+
+      <BlogPost
+        title="Instalar texturas para os componentes das páginas"
+        startDate="16/05/2025"
+        description="Para melhorar o apelo visual do site acredito que componente com texturas svg ficariam muito bons e relativamente leves de serem implmentados"
+        version={[
+          {
+            title: "Svg de texturas v1.0",
+            endDate: "",
+            description: "",
+            image: [
+              
+            ]
+          }
+        ]}
+      />
+
+      <CompTextura></CompTextura>
 
 
     </div>
