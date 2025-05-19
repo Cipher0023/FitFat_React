@@ -1,8 +1,9 @@
+import Grainy from '@/components/componenteTextura/Grainy'
 import React from 'react'
 
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center min-h-screen bg-gray-800">
+    <div className="flex flex-col items-center min-h-screen">
       <h1
         className="text-white text-6xl font-bold w-full text-center"
         style={{ marginTop: '30px' }}
@@ -24,6 +25,7 @@ const Contact = () => {
         <br />
         placeholder@gmail.com.br
       </p>
+      <Grainy/>
     </div>
   )
 }

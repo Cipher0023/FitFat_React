@@ -274,15 +274,24 @@ relative shadow-inner shadow-blue-800/30 rounded-2xl">
         description="Para melhorar o apelo visual do site acredito que componente com texturas svg ficariam muito bons e relativamente leves de serem implmentados"
         version={[
           {
-            title: "Svg de texturas v1.0",
+            title: "Criando Svg de turbulência v1.0",
             endDate: "19/05/2025",
             description: "tentei usar um tutorial de um vídeo no youtube, mas o resultado não atendeu em nada o que eu esperava, o maior problema foi que as cores ficaram embaralhadas e as formas geradas não eram nem um pouco controlaveis",
             image: [
               { src: "/images/posts/usandoTexturas/efeitoTurbulencia1.png", alt: "primeiro teste de textura turbulence" },
             ]
+          },
+          {
+            title: "Usando SVG's importados v2.0",
+            endDate: "19/05/2025",
+            description: "Tentei criar o efeito do background por conta própria, foi interessante para aprender mas 0 prático, muito complexo e demorado para conseguir um resultado minimamente aceitavel, devido a isso importei um SVG de um gerador e testei o resultado, muito bom e rápido",
+            image: [
+              { src: "/images/posts/usandoTexturas/usandoSvgs.png", alt: "primeiro teste de textura turbulence" },
+            ]
           }
         ]}
       />
+
 
 
     </div>

@@ -1,10 +1,10 @@
-import ImagensEquipe from '@/components/imagensEquipe/ImagensEquipe'
+import ImagensEquipe from '@/components/sobre/imagensEquipe/ImagensEquipe'
 import Sobre from '@/components/sobre/Sobre'
 import React from 'react'
 
 const page = () => {
   return (
-    <div className='flex flex-col items-center bg-gray-800 w-full min-h-screen p-10'>
+    <div className='flex flex-col items-center w-full min-h-screen p-10'>
 
       <Sobre
       title="Sobre nós"
