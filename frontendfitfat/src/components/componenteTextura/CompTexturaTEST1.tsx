@@ -2,9 +2,9 @@ import React from 'react'
 
 type Props = object
 
-function CompTextura({}: Props) {
+function CompTexturaTEST1({}: Props) {
   return (
-    <div className=' absolute flex w-full h-full inset-0 z-index'>
+    <div className='flex w-full h-full'>
       <svg className='w-full h-full'>
         <defs>
           <filter id="textura">
@@ -24,4 +24,4 @@ function CompTextura({}: Props) {
   )
 }
 
-export default CompTextura
+export default CompTexturaTEST1

@@ -8,7 +8,6 @@ import Maps from '@/components/maps/Maps'
 import React from 'react'
 import { TelaTheejs } from '@/components/Tela3d/Tela3d';
 import BlogPost from '@/components/blogPost/BlogPost'
-import CompTextura from '@/components/componenteTextura/CompTextura'
 
 type Props = object
 
@@ -276,16 +275,14 @@ relative shadow-inner shadow-blue-800/30 rounded-2xl">
         version={[
           {
             title: "Svg de texturas v1.0",
-            endDate: "",
-            description: "",
+            endDate: "19/05/2025",
+            description: "tentei usar um tutorial de um vídeo no youtube, mas o resultado não atendeu em nada o que eu esperava, o maior problema foi que as cores ficaram embaralhadas e as formas geradas não eram nem um pouco controlaveis",
             image: [
-              
+              { src: "/images/posts/usandoTexturas/efeitoTurbulencia1.png", alt: "primeiro teste de textura turbulence" },
             ]
           }
         ]}
       />
-
-      <CompTextura></CompTextura>
 
 
     </div>
