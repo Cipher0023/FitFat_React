@@ -6,6 +6,7 @@ import NavItem, { NavItemInterface } from "./Item/index";
 import { usePathname } from "next/navigation";
 import { Chakra_Petch } from 'next/font/google';
 import Logo from '@/components/logo/Logo'
+import Grainy from "../efeitosSVG/Grainy";
 
 
 
@@ -43,6 +44,9 @@ export default function Navbar() {
   return (
     <header>
       <nav className="sm:h-[2em] bg-gradient-to-b  from-gray-700 to-gray-700 flex flex-row text-2xl justify-between items-center box-border">
+        <div className="flex flex-row items-center bg-red-500">
+
+        </div>
         <Link href="/">
           <Logo/>            
         </Link>

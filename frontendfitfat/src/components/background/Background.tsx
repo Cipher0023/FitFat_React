@@ -1,5 +1,5 @@
 import React from 'react'
-import Rain from '../componenteTextura/Rain'
+import Rain from '../efeitosSVG/Rain'
 
 type Props = object
 

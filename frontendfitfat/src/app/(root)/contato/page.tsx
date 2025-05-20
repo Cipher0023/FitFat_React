@@ -1,4 +1,3 @@
-import Grainy from '@/components/componenteTextura/Grainy'
 import React from 'react'
 
 const Contact = () => {
@@ -25,7 +24,6 @@ const Contact = () => {
         <br />
         placeholder@gmail.com.br
       </p>
-      <Grainy/>
     </div>
   )
 }
